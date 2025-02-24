@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Form I.</h2>
+    <h1 style="text-align: center;">Contact Details</h1>
+    <form>
+      <fieldset>
+        <legend>Please enter your personal details:</legend>
+       <label for="first-name">First name:*</label> 
+       <input type="text" name="first-name" required class="name">
+        <br><br>
+       <label for="last-name">Last name:*</label>
+       <input type="text" name="last-name" required class="name">
+       <br><br>
+       <label for="address" >Street address:</label>
+       <input type="text" name="address" class="add">
+       <br><br>
+       <label for="city:">Town/city:</label>
+       <input type="text" name="city" class="add">
+       <br><br>
+       <label for="postcode">Postcode/Zip:</label>
+       <input type="text" name="postcode">
+       <br><br>
+       <label for="telephone">Telephone:</label>
+       <input type="tel" name="telephone">
+       <br><br>
+       <label for="mobile" id="mob">Mobile:</label>
+       <input type="tel" name="mobile">
+       <br><br>
+       <label for="email">Email address:*</label>
+       <input type="text" name="email" required id="mail">
+       <br><br>
+       Fields marked with * are required.
+       <br><br>
+       <input type="submit" name="button" value="Submit">
+
+      </fieldset>  
+    </form>
+
+    <br><br>
+
+    <h2 style="text-align: center;">Form II.</h2>
+    <form>
+      <fieldset>
+        <h1>Welcome to Mr. Rakoczy's Popcorn Sales Site Extravaganza</h1>
+        <br><br>
+        <label for="buyer-name">Buyer's Name:</label>
+        <input type="text">
+        <br><br>
+        <label for="street-address">Street Address:</label>
+        <input type="text" name="" id="">
+        <br><br>
+        <label for="">City,Province,Postal Code:</label>
+        <input type="text">
+        <br><br>
+        <table border="1">
+          <thead>
+            <tr>
+             <th>Product</th>
+             <th>Price</th>
+             <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unpopped Popcorn (1 lb.)</td>
+              <td>$3.00</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Caramel Popcorn (2 lb. canister)</td>
+              <td>$3.50</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Caramel Nut Popcorn (2 lb. canister)</td>
+              <td>$4.50</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Toffee Nut Popcorn (2 lb. canister)</td>
+              <td>$5.00</td>
+              <td></td>
+            </tr>
+              
+          </tbody>
+        </table>
+  
+        <h2>Payment Method</h2>
+        <input type="radio" name="payment"> Visa
+        <br><br>
+        <input type="radio" name="payment"> Master Card
+        <br><br>
+        <input type="radio" name="payment"> Discover
+        <br><br>
+        <input type="radio" name="payment"> Check
+        <br><br>
+        <input type="submit" value="Submit Order">
+      </fieldset>
+    </form>
+    <br><br>
+    <h2 style="text-align: center;">Form III.</h2>
+    <form style="background-color:blanchedalmond; padding: 10px;">
+        <h1>Employee Registration Form</h1>
+        <br>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" placeholder="Enter First Name">
+        <label for="lastName">Last Name:</label>
+        <input type="text" placeholder="Enter Last Name">
+        <br><br>
+
+        <label for="">Email:</label>
+        <input type="text" placeholder="Enter Email">
+        <label for="">Phone:</label>
+        <input type="tel" placeholder="Enter Phone Number">
+        <br><br>
+        
+        <label for="">Gender:</label>
+        <input type="radio" name="gender"><label for=""> Male</label> 
+        <input type="radio" name="gender"><label for=""> Female</label>
+        <input type="radio" name="gender"><label for=""> Trans</label>
+        <input type="radio" name="gender"><label for=""> Prefer not to say</label>
+        <br><br>
+
+        <label for="">Date of Birth: </label>
+        <input type="date"> 
+        <br>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+          <legend>Address Details</legend>
+          <label for="">City: </label>
+          <input type="text" placeholder="Enter City">
+          <label for="">State: </label>
+          <input type="text" placeholder="Enter State">
+          <br><br>
+          <label>Address:</label>
+          <textarea></textarea>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+        <legend>Professional Information</legend>
+        <label for="">Marital Status:</label>
+        <select>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+        </select>
+
+        <label for="">Education:</label>
+        <select>
+          <option value="highSchool">High School</option>
+          <option value="graduate">Graduate</option>
+          <option value="postGraduate">Post Graduate</option>
+        </select>
+        <br><br>
+
+        <label for="">Experience:</label>
+        <select>
+          <option value="fresher">Fresher</option>
+          <option value="1yr">1 Year</option>
+          <option value="2yr">2 Year</option>
+          <option value="3yr+">3 Year+</option>
+        </select>
+
+        <label for="">Position:</label>
+        <select>
+          <option value="intern">Intern</option>
+          <option value="employee">Employee</option>
+        </select>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="">Rate out Company: </label>
+          <input type="range">
+          <br><br>
+          <label for="">Upload Resume</label>
+          <input type="file">
+        </fieldset>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
