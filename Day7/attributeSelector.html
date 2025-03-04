@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input:focus-within{
+            background-color: yellow;
+        } 
+         
+         /*  to select p have attribute id */
+        p[id]{              
+            background-color: red;  
+        }
+        
+        /* containing the word anywhere */
+        p[id *= "how are you"]{       
+                background-color: blue;
+        }
+
+        /* containing word "are" */
+        p[id ~= "are"]{        
+            background-color: aqua;
+        }
+
+        /* ending with value */
+        a[href $= "org"]{
+            background-color: yellowgreen;
+        }
+
+        /* starting with value */
+        a[href ^= "xy"]{
+            background-color: violet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <label for="">Name: </label>
+    <input type="text" placeholder="name"> 
+
+    <p id="hello there how are you">hello there</p> 
+
+    <a href="xyz.org">click me!</a>
+
+</body>
+</html>

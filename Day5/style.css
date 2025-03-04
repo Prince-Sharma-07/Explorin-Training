@@ -1,0 +1,16 @@
+/* 1. Decendent */
+
+div{
+    border: 10px solid green;
+}
+
+.div1 .div2 .div3{
+    border: 5px solid yellow;
+} 
+
+/* 2. Child  */
+
+ul > li{
+    background-color: blue;
+}
+

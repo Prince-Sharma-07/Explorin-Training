@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+
+        .wrapper{
+            padding: 20px;
+            background-color: aqua;
+            width: 400px;
+            height: 200px;
+        }
+        .one{
+            height:100px;
+            width: 100px;
+            background-color: blue;
+            border: 10px solid;
+            position: absolute;
+        }
+        .two{
+            height:100px;
+            width: 100px;
+            margin-left: 5rem;
+            background-color: red;
+            border: 10px solid;
+            position: absolute;
+            z-index: 1;
+            outline: 5px solid yellow;
+            outline-offset: 6px;
+        }
+        .three{
+            height:100px;
+            width: 100px;
+            margin-left: 13rem;
+            background-color: green;
+            border: 10px solid;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="one">A</div>
+        <div class="two">B</div>
+        <div class="three">C</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div:not(.container , .wrap){
+           border: 10px solid #ED5428;
+           padding: 16px;
+           text-align: center;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 984px;
+        }
+        div:not(.d , .container){
+            width: 328px;
+        }
+        .d{
+            flex-grow: 1;
+            text-align: center;
+        }
+        body{ 
+            margin: 20% 18% auto;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+  </div>
+
+</body>
+</html>

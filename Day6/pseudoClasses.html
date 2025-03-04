@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            
+        }
+
+        div:hover{                     /* pseudo classes contain ':' int between*/
+            background-color: yellow; 
+        }
+
+        /* div:active{
+            background-color: blue;
+        }
+
+        div::after{
+            content:"After";
+            display: block;
+            border: 2px solid black;
+            background-color: green;
+        }
+
+        div::before{
+            content: "before";
+            background-color: aqua;
+            border: 2px solid black;
+            display: block;
+        } */
+        
+        div::spelling-error{
+            text-decoration: wavy red underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" contenteditable spellcheck="true">elo tre</div>
+</body>
+</html>
