@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    width: 30%;
+    background-color: antiquewhite;
+    padding: 1%;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.err{
+    color: red;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            text-align: center;
+            padding: 10px;
+        }
+        button{
+            height: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            cursor: pointer;
+            box-shadow: inset 0px 4px 12px #00000040;
+        }
+        .heading{
+            flex: 2;
+        }
+        section{
+            display: flex;
+            padding: 10px;
+            column-gap: 30px;
+        }
+        @media (max-width:440px){
+            header{
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            section{
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            button{
+                max-width: 130px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>Theme Toggle</h1>
+        </div>
+        <button id="btn">Switch Theme</button>
+    </header>
+    <section>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla est, dolor nesciunt adipisci similique in hic animi earum dolorum. Amet aperiam repellendus dolor repellat expedita quod excepturi id illo, cupiditate dicta illum atque asperiores minus in? Tenetur ab laudantium necessitatibus accusamus, sed, obcaecati animi voluptates est voluptatibus rerum quo laborum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A consectetur minima vitae, ipsam quasi et accusantium, inventore reprehenderit nam error facilis? Nihil officiis, temporibus deserunt quidem numquam repellat sequi architecto.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium neque dicta eveniet itaque sunt aliquid ab, porro ut voluptatum, dolore voluptatibus non odio aut? Eaque corporis velit eveniet, cum tenetur asperiores dolor dicta laudantium est repellendus? Excepturi nihil repellendus sequi?
+        </div>
+        <div>
+            <img src="./20231004_201913.jpg" alt="image" height="100%" width="100%">
+        </div>
+    </section>
+    <script>
+        function changeTheme(){
+            const colour=document.body.style.backgroundColor;
+            if(colour=="black"){
+                document.body.style.backgroundColor="white"; 
+                document.body.style.color="black";
+            }
+            else{
+                document.body.style.backgroundColor="black"; +
+                document.body.style.color="white";
+            }
+        }
+        const btn=document.getElementById("btn");
+        btn.addEventListener('click',changeTheme);
+    </script>
+</body>
+</html>
